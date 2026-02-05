@@ -14,9 +14,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  text-align: center;
-}
 
 .profile-img {
   width: 200px;
@@ -39,13 +36,18 @@ h2 {
 }
 
 .link {
-  display: block;
+  display: inline-block;
   color: #00e5ff;
   text-decoration: underline;
-  margin: 40px 0;
+  margin: 20px 0;
   font-size: 24px;
   cursor: pointer;
 }
-
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
 
 
