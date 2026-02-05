@@ -9,6 +9,7 @@ function App() {
   if (mostrarDoc) {
     return <Documentacion volver={() => setMostrarDoc(false)} />;
   }
+
   return (
     <div className="App">
       <div className="container">
@@ -16,20 +17,31 @@ function App() {
 
         <h1>Evaluación parcial 1</h1>
 
-        <h2>Alumno(a):Kevin Hernandez Ramos</h2>
+        <h2>Alumno(a): Kevin Hernandez Ramos</h2>
 
+        {/* LINK EXTERNO SEGURO */}
         <a
-          href="https://www.linkedin.com/in/kevin-jovany-hernandez-ramos-325b283a4/    "
+          href="https://www.linkedin.com/in/kevin-jovany-hernandez-ramos-325b283a4/"
           target="_blank"
-          rel=""
+          rel="noreferrer noopener"
           className="link"
         >
-          LINKED IN DE MI PROFILE
+          LINKEDIN DE MI PERFIL
         </a>
 
-        <a onClick={() => setMostrarDoc(true)} className="link">
-          DOCUMENTACION PARCIAL 1
-        </a>
+        {/* BOTÓN EN VEZ DE <a> SIN href */}
+        <button
+          onClick={() => setMostrarDoc(true)}
+          className="link"
+          style={{
+            background: 'none',
+            border: 'none',
+            padding: 0,
+            cursor: 'pointer'
+          }}
+        >
+          DOCUMENTACIÓN PARCIAL 1
+        </button>
       </div>
     </div>
   );
