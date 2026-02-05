@@ -30,7 +30,7 @@ function App() {
         </a>
 
         {/* BOTÓN EN VEZ DE <a> SIN href */}
-        <button
+        <a
           onClick={() => setMostrarDoc(true)}
           className="link"
           style={{
@@ -41,7 +41,7 @@ function App() {
           }}
         >
           DOCUMENTACIÓN PARCIAL 1
-        </button>
+        </a>
       </div>
     </div>
   );
